@@ -1,0 +1,10 @@
+.socialLink {
+	--fxd: row;
+	--colmg: var(--space-sm);
+	width: fit-content;
+}
+
+.socialIcon {
+	width: var(--fz-md);
+	fill: currentColor;
+}
