@@ -1,0 +1,365 @@
+/* Viewport Breakpoints */
+@custom-media --md-viewport screen and (width >= 350px);
+@custom-media --lg-viewport screen and (width >= 550px);
+@custom-media --xl-viewport screen and (width >= 750px);
+@custom-media --xxl-viewport screen and (width >= 950px);
+@custom-media --xxxl-viewport screen and (width >= 1150px);
+@custom-media --xxxxl-viewport screen and (width >= 1350px);
+@custom-media --xxxxxl-viewport screen and (width >= 1550px);
+
+/* THEME RULES */
+
+:root {
+	/* Type Scale */
+	--fz-scale-ratio: 1.18;
+	--fz-base: 1rem;
+	--fz-sm: calc(0.85 * var(--fz-base));
+	--fz-md: calc(var(--fz-scale-ratio) * var(--fz-base));
+	--fz-lg: calc(var(--fz-scale-ratio) * var(--fz-md));
+	--fz-xl: calc(var(--fz-scale-ratio) * var(--fz-lg));
+	--fz-xxl: calc(var(--fz-scale-ratio) * var(--fz-xl));
+	--fz-xxxl: calc(var(--fz-scale-ratio) * var(--fz-xxl));
+	--fz-xxxxl: calc(var(--fz-scale-ratio) * var(--fz-xxxl));
+
+	@media (--xl-viewport) {
+		--fz-scale-ratio: 1.25;
+	}
+
+	@media (--xxxxl-viewport) {
+		--fz-scale-ratio: 1.35;
+	}
+
+	/* Space Scale */
+	--space-unit: 1em;
+	--space-xxxs: calc(0.25 * var(--space-unit));
+	--space-xxs: calc(0.375 * var(--space-unit));
+	--space-xs: calc(0.5 * var(--space-unit));
+	--space-sm: calc(0.75 * var(--space-unit));
+	--space-md: calc(1.25 * var(--space-unit));
+	--space-lg: calc(2 * var(--space-unit));
+	--space-xl: calc(3.25 * var(--space-unit));
+	--space-xxl: calc(5.25 * var(--space-unit));
+	--space-xxxl: calc(8.5 * var(--space-unit));
+	--space-xxxxl: calc(13.75 * var(--space-unit));
+
+	/* Color Scales */
+	--c-gray-10: hsl(0deg, 0%, 39%);
+	--c-gray-20: hsl(0deg, 0%, 50%);
+	--c-gray-30: hsl(0deg, 0%, 63%);
+	--c-gray-40: hsl(0deg, 0%, 77%);
+	--c-gray-50: hsl(0deg, 0%, 92%);
+
+	--bgc-10: hsl(268deg, 83%, 5%);
+	--bgc-20: hsl(272deg, 74%, 11%);
+	--bgc-30: hsl(272deg, 69%, 14%);
+	--bgc-40: hsl(272deg, 66%, 17%);
+	--bgc-50: hsl(272deg, 64%, 19%);
+
+	--c-blue-10: hsl(207deg, 52%, 36%);
+	--c-blue-20: hsl(207deg, 40%, 48%);
+	--c-blue-30: hsl(208deg, 44%, 56%);
+	--c-blue-40: hsl(208deg, 55%, 64%);
+	--c-blue-50: hsl(209deg, 55%, 70%);
+	--c-blue-60: hsl(209deg, 56%, 76%);
+	--c-blue-70: hsl(208deg, 56%, 80%);
+
+	--c-purple-10: hsl(273deg, 51%, 47%);
+	--c-purple-20: hsl(271deg, 63%, 60%);
+	--c-purple-30: hsl(269deg, 64%, 67%);
+	--c-purple-40: hsl(268deg, 64%, 73%);
+	--c-purple-50: hsl(267deg, 63%, 78%);
+	--c-purple-60: hsl(266deg, 63%, 82%);
+	--c-purple-70: hsl(266deg, 62%, 85%);
+
+	--c-pink-10: hsl(297deg, 48%, 40%);
+	--c-pink-20: hsl(298deg, 41%, 52%);
+	--c-pink-30: hsl(298deg, 51%, 61%);
+	--c-pink-40: hsl(298deg, 64%, 69%);
+	--c-pink-50: hsl(299deg, 65%, 75%);
+	--c-pink-60: hsl(298deg, 66%, 79%);
+	--c-pink-70: hsl(299deg, 67%, 84%);
+
+	/* Property Values */
+	--c-accent-main: var(--c-pink-50);
+
+	--c-text-primary: var(--c-gray-40);
+	--c-text-secondary: var(--c-gray-30);
+	--c-text-main-heading: var(--c-blue-30);
+	--c-text-sub-heading: var(--c-blue-30);
+
+	--c-link-default: var(--c-pink-60);
+	--c-link-visited: var(--c-pink-40);
+}
+
+/* BASE RULES */
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+button,
+input,
+select,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	line-sizing: normal;
+
+	@media screen and (prefers-reduced-motion: no-preference) {
+		&:focus-within {
+			scroll-behavior: smooth;
+		}
+	}
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--bgc-10);
+	font-family: sans-serif;
+	font-size: var(--fz-base);
+	color: var(--c-text-primary);
+	line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* color: var(--c-text-heading); */
+	font-weight: 700;
+}
+
+h1 {
+	color: var(--c-text-main-heading);
+	line-height: 1.2;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--c-text-sub-heading);
+	line-height: 1.2;
+}
+
+p {
+	max-width: 65ch;
+}
+
+small {
+	font-size: var(--fz-sm);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+
+figcaption {
+	color: var(--c-text-secondary);
+	margin-block-start: var(--space-sm);
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+nav li:before {
+	content: "\200B";
+	position: absolute;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+img {
+	/* Tone down brightness for dark theme */
+	filter: grayscale(10%) opacity(80%);
+}
+
+audio {
+	width: 100%;
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+picture {
+	display: contents;
+}
+
+source {
+	display: none;
+}
+
+iframe {
+	border: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+hr {
+	border-style: solid;
+	border-width: 1px 0 0;
+	color: inherit;
+	height: 0;
+	overflow: visible;
+}
+
+a {
+	color: var(--c-link-default);
+	transition: transform 0.2s;
+
+	&:visited {
+		color: var(--c-link-visited);
+	}
+
+	@media screen and (hover: hover) {
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+[hidden] {
+	display: none;
+}
+
+.sr-only {
+	position: absolute;
+	top: auto;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+	white-space: nowrap;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+}
+
+.list-unmarked {
+	list-style: none;
+}
+
+.l-flex {
+	display: flex;
+	flex-direction: var(--fxd, row);
+	flex-wrap: var(--fxw, wrap);
+	column-gap: var(--colmg, var(--fxg), 0px);
+	row-gap: var(--rg, var(--fxg), 0px);
+}
+
+.l-flex-item {
+	background-clip: content-box;
+}
+
+.l-grid {
+	display: grid;
+	column-gap: var(--colmg, var(--gg), 0px);
+	row-gap: var(--rg, var(--gg), 0px);
+}
+
+.l-grid-section-container {
+	--content-grid-columns: 1fr;
+	grid-template-columns:
+		[full-start] var(--space-md) [wrapper-start] var(--content-grid-columns)
+		[wrapper-end] var(--space-md) [full-end];
+
+	@media (--lg-viewport) {
+		grid-template-columns:
+			[full-start] var(--space-lg) [wrapper-start] var(
+				--content-grid-columns
+			)
+			[wrapper-end] var(--space-lg) [full-end];
+	}
+
+	@media (--xl-viewport) {
+		grid-template-columns:
+			[full-start] var(--space-xl) [wrapper-start] var(
+				--content-grid-columns
+			)
+			[wrapper-end] var(--space-xl) [full-end];
+	}
+
+	@media (--xxxxl-viewport) {
+		grid-template-columns:
+			[full-start] var(--space-xxl) [wrapper-start] var(
+				--content-grid-columns
+			)
+			[wrapper-end] var(--space-xxl) [full-end];
+	}
+}
+
+.l-grid-auto {
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(var(--miw, max-content), 1fr)
+	);
+}
