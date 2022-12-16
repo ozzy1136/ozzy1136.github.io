@@ -1,0 +1,80 @@
+.wrapper {
+	margin-block-end: var(--space-md);
+}
+
+.contactInfoWrapper {
+	grid-column: wrapper;
+	background-color: var(--bgc-20);
+	padding-inline: var(--space-lg);
+	padding-block: var(--space-lg);
+	margin-block-end: var(--space-xl);
+	border-radius: 20px;
+
+	@media (--xl-viewport) {
+		padding-inline: var(--space-xxl);
+		padding-block: var(--space-lg);
+		align-items: center;
+	}
+
+	@media (--xxl-viewport) {
+		margin-block-end: var(--space-xxl);
+		justify-content: space-around;
+	}
+
+	@media (--xxxxl-viewport) {
+		padding-inline: var(--space-xxxl);
+	}
+}
+
+.contactInfoSocials {
+	--fxd: column;
+	--rg: var(--space-sm);
+}
+
+.contactInfoSocialsHeadingWrapper {
+	text-align: center;
+	margin-block-end: var(--space-sm);
+
+	@media (--xl-viewport) {
+		text-align: initial;
+		grid-column: 1 / -1;
+	}
+}
+
+.contactInfoSocialsHeading {
+	font-size: var(--fz-md);
+}
+
+.contactInfoSocialsListWrapper {
+	margin-inline: auto;
+	margin-block-end: var(--space-md);
+
+	@media (--xl-viewport) {
+		margin-inline-start: 0px;
+		grid-row-start: 2;
+	}
+}
+
+.contactInfoSocialsList {
+	--fxd: column;
+	--rg: var(--space-md);
+
+	@media (--lg-viewport) {
+		--fxd: row;
+		--colmg: var(--space-xl);
+	}
+}
+
+.cardInfoTextSummary {
+	@media (--xl-viewport) {
+		grid-column: 2;
+	}
+}
+
+.authorDetailsWrapper {
+	grid-column: wrapper;
+}
+
+.authorDetails {
+	color: var(--c-text-secondary);
+}
