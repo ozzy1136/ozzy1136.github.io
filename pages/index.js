@@ -8,8 +8,8 @@ export default function Home() {
 			<Head>
 				<title>Ozmar - Web Developer</title>
 			</Head>
-			<IntroSection />
 			<main>
+				<IntroSection />
 				<BioSection />
 				<ServicesSection />
 			</main>

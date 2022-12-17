@@ -10,7 +10,7 @@
 	}
 
 	@media (--xxxl-viewport) {
-		--content-grid-columns: max-content 1fr 20fr;
+		--content-grid-columns: 2fr [gap1-start] 2vw [gap1-end] 3fr;
 		margin-block-end: var(--space-xxxl);
 		margin-block-start: var(--space-md);
 	}
@@ -82,8 +82,10 @@
 	}
 
 	@media (--xxxl-viewport) {
+		grid-column-end: wrapper-end;
 		margin-block-end: var(--space-lg);
 		height: fit-content;
+		width: max-content;
 	}
 }
 

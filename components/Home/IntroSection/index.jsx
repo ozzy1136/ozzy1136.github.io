@@ -39,9 +39,15 @@ export default function IntroSection() {
 					/>
 				</div>
 				<figcaption className={`${styles.photoCaption}`}>
-					Myself standing in front of Estadio Olimpico Universitario
-					in Mexico City, home of my favorite mexican-based soccer
-					team, Pumas UNAM.
+					Myself standing in front of{" "}
+					<a href="https://en.wikipedia.org/wiki/Estadio_Ol%C3%ADmpico_Universitario">
+						Estadio Olimpico Universitario
+					</a>{" "}
+					in Mexico City, home of my favorite mexican soccer team,{" "}
+					<a href="https://en.wikipedia.org/wiki/Club_Universidad_Nacional">
+						Pumas UNAM
+					</a>
+					.
 				</figcaption>
 			</figure>
 		</div>

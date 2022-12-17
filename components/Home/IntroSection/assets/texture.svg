@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true">
 	<pattern id="pattern-38" patternUnits="userSpaceOnUse" width="32" height="32">
-		<circle cx="0" cy="0" r="3" fill="var(--c-pink-20, currentcolor)" />
-		<circle cx="0" cy="32" r="3" fill="var(--c-pink-20, currentcolor)" />
-		<circle cx="32" cy="32" r="3" fill="var(--c-pink-20, currentcolor)" />
-		<circle cx="32" cy="0" r="3" fill="var(--c-pink-20, currentcolor)" />
-		<circle cx="16" cy="16" r="3" fill="var(--c-pink-20, currentcolor)" />
+		<circle cx="0" cy="0" r="3" fill="var(--fill-texture, currentcolor)" />
+		<circle cx="0" cy="32" r="3" fill="var(--fill-texture, currentcolor)" />
+		<circle cx="32" cy="32" r="3" fill="var(--fill-texture, currentcolor)" />
+		<circle cx="32" cy="0" r="3" fill="var(--fill-texture, currentcolor)" />
+		<circle cx="16" cy="16" r="3" fill="var(--fill-texture, currentcolor)" />
 	</pattern>
 	<pattern id="pattern-16" patternUnits="userSpaceOnUse" width="20" height="20">
-		<path d="M-1,19 l2,2 M19,21 l2,-2" style="stroke: var(--c-pink-20, currentcolor)" fill="none" />
-		<polyline points="0,0 10,8 20,0" style="stroke: var(--c-pink-20, currentcolor)" fill="none" />
+		<path d="M-1,19 l2,2 M19,21 l2,-2" style="stroke: var(--fill-texture, currentcolor)" fill="none" />
+		<polyline points="0,0 10,8 20,0" style="stroke: var(--fill-texture, currentcolor)" fill="none" />
 	</pattern>
 	<rect fill="url(#pattern-16)" width="100%" height="100%" />
 </svg>

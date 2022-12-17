@@ -89,6 +89,8 @@
 
 	--c-link-default: var(--c-pink-60);
 	--c-link-visited: var(--c-pink-40);
+
+	--fill-texture: var(--c-blue-10);
 }
 
 /* BASE RULES */
