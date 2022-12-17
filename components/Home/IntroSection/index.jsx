@@ -8,9 +8,6 @@ import SocialsList from "../../SocialsList";
 export default function IntroSection() {
 	return (
 		<div className={`${styles.wrapper} l-grid l-grid-section-container`}>
-			<div className={styles.patternWrapper}>
-				<TextureBackground className={styles.patternEl} />
-			</div>
 			<div className={`${styles.headerWrapper}`}>
 				<h1 className={`${styles.headerHeading}`}>Ozmar Mendoza</h1>
 				<div className={`${styles.headerBio}`}>
@@ -50,6 +47,9 @@ export default function IntroSection() {
 					.
 				</figcaption>
 			</figure>
+			<div className={styles.patternWrapper}>
+				<TextureBackground className={styles.patternEl} />
+			</div>
 		</div>
 	);
 }
