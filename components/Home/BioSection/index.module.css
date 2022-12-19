@@ -14,11 +14,6 @@
 
 .bioWrapper {
 	grid-column: wrapper;
-	margin-block-end: var(--space-xl);
-
-	@media (--xxxl-viewport) {
-		grid-column-end: span 1;
-	}
 }
 
 .sectionHeading {

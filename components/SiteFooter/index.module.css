@@ -7,17 +7,15 @@
 	background-color: var(--bgc-20);
 	padding-inline: var(--space-lg);
 	padding-block: var(--space-lg);
-	margin-block-end: var(--space-xl);
+	margin-block-end: var(--space-xxl);
 	border-radius: 20px;
 
 	@media (--xl-viewport) {
-		padding-inline: var(--space-xxl);
 		padding-block: var(--space-lg);
 		align-items: center;
 	}
 
 	@media (--xxl-viewport) {
-		margin-block-end: var(--space-xxl);
 		justify-content: space-around;
 	}
 
