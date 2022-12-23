@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { BioSection, IntroSection, ServicesSection } from "../components/Home";
+import { BioSection, IntroSection } from "../components/Home";
 
 export default function Home() {
 	return (
@@ -11,7 +11,6 @@ export default function Home() {
 			<main>
 				<IntroSection />
 				<BioSection />
-				<ServicesSection />
 			</main>
 		</>
 	);
