@@ -22,7 +22,7 @@
 	--fz-xxxxl: calc(var(--fz-scale-ratio) * var(--fz-xxxl));
 
 	@media (--xl-viewport) {
-		--fz-scale-ratio: 1.25;
+		--fz-scale-ratio: 1.28;
 	}
 
 	@media (--xxxxl-viewport) {
