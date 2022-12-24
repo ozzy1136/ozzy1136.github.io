@@ -10,7 +10,7 @@
 	}
 
 	@media (--xxxl-viewport) {
-		--content-grid-columns: 2fr [gap1-start] 2vw [gap1-end] 3fr;
+		--content-grid-columns: minmax(375px, 3fr) 2vw 5fr;
 		margin-block-start: var(--space-lg);
 		margin-block-end: var(--space-xxxl);
 	}
