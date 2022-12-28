@@ -15,7 +15,8 @@ export default function IntroSection() {
 						Front-end web developer based in Houston, Texas
 						&#128640; &#129304;
 					</p>
-					<p>Curr&shy;ently a free agent</p>
+					<p>Passionate sports fan &#127967; &#9917;</p>
+					<p>Currently a free agent and looking for work</p>
 				</div>
 				<aside className={`${styles.headerSocialsListWrapper}`}>
 					<SocialsList className={`${styles.headerSocialsList}`} />

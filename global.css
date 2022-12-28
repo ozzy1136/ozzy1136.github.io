@@ -82,7 +82,7 @@
 	/* Property Values */
 	--c-accent-main: var(--c-pink-50);
 
-	--c-text-primary: var(--c-gray-40);
+	--c-text-primary: var(--c-gray-30);
 	--c-text-secondary: var(--c-gray-30);
 	--c-text-main-heading: var(--c-blue-30);
 	--c-text-sub-heading: var(--c-blue-30);
@@ -90,7 +90,7 @@
 	--c-link-default: var(--c-pink-60);
 	--c-link-visited: var(--c-pink-40);
 
-	--fill-texture: var(--c-blue-10);
+	--fill-texture: var(--c-blue-20);
 }
 
 /* BASE RULES */
