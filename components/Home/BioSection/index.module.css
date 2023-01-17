@@ -9,7 +9,7 @@
 
 .sectionHeadingWrapper {
 	grid-column: wrapper;
-	margin-block-end: var(--space-xl);
+	margin-block-end: var(--space-lg);
 }
 
 .bioWrapper {

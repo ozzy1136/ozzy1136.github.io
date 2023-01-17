@@ -16,24 +16,32 @@ export default function HomeBioSection() {
 			</div>
 			<div className={`${styles.bioWrapper}`}>
 				<p>
-					Welcome to my nook on the web! Although I am based in
-					Houston, TX, I am very much capable and willing to work
-					remote.
-				</p>
-				<br />
-				<p>
-					My goal is to create spaces and envrironments that anybody
-					can use. This can be achieved with quailty accessibility,
-					common sense on UX, and a clear message to your visitors.
-				</p>
-				<br />
-				<p>
-					<span className={`${styles.textTLDR}`}>tl;dr:</span> I am a
-					partner and collaborator for creatives and companies
-					aspiring to create engaging web experiences!
+					Hi there &#128075;, and welcome to my nook on the web! I am
+					a front-end web developer with a passion for coding and
+					using that skill to create cool and useful things. I started
+					my coding journey by tinkering with{" "}
+					<a href="https://www.raspberrypi.com">Raspberry Pi</a>, but
+					was drawn to the Web's innate openess and the fact that you
+					can create websites that are available to anyone in the
+					world with an Internet connection. And now, with the web
+					more powerful than ever, it takes a bit more effort to
+					provide a great user experience for every user; a challenge
+					I'm excited to tackle on every project I work on!
 				</p>
 			</div>
 			<ul className={`${styles.servicesList} l-grid list-unmarked`}>
+				<li className={`${styles.serviceCategory}`}>
+					<div className={`${styles.serviceName}`}>
+						Programming languages and tools
+					</div>
+					<ol className={`${styles.serviceDetailsList}`}>
+						<li>HTML, CSS, and JavaScript</li>
+						<li>React.JS and Next.JS</li>
+						<li>Svelte</li>
+						<li>Jest</li>
+						<li>PostCSS</li>
+					</ol>
+				</li>
 				<li className={`${styles.serviceCategory}`}>
 					<div className={`${styles.serviceName}`}>
 						Bespoke Website Development
@@ -42,20 +50,6 @@ export default function HomeBioSection() {
 						<li>E-commerce</li>
 						<li>Internal tools and dashboards</li>
 						<li>Web Applications</li>
-					</ol>
-				</li>
-				<li className={`${styles.serviceCategory}`}>
-					<div className={`${styles.serviceName}`}>
-						<abbr title="Content Management Systems">CMS</abbr> and
-						Webisite Builders
-					</div>
-					<ol className={`${styles.serviceDetailsList}`}>
-						<li>Wordpress</li>
-						<li>Shopify</li>
-						<li>Wix</li>
-						<li>Squarespace</li>
-						<li>Joomla</li>
-						<li>Drupal</li>
 					</ol>
 				</li>
 				<li className={`${styles.serviceCategory}`}>
