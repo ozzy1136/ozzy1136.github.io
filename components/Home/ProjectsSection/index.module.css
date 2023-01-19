@@ -1,0 +1,18 @@
+.container {
+	margin-block-end: var(--space-xxl);
+}
+
+.sectionHeading {
+	grid-column: wrapper;
+}
+
+.projectsContainer {
+	grid-column: wrapper;
+}
+
+.projectContainer {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--space-xl);
+	margin-block-start: var(--space-xxxl);
+}
