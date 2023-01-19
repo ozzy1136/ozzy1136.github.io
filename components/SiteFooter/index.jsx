@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-import SocialsList from "../SocialsList";
+import SocialsList from "@components/SocialsList";
 
 export default function SiteFooter() {
 	return (

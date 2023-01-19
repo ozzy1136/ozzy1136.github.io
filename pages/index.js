@@ -1,6 +1,7 @@
 import Head from "next/head";
 
-import { BioSection, IntroSection } from "../components/Home";
+import IntroSection from "@components/Home/IntroSection";
+import BioSection from "@components/Home/BioSection";
 
 export default function Home() {
 	return (

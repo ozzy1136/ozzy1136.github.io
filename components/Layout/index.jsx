@@ -1,4 +1,4 @@
-import SiteFooter from "../SiteFooter";
+import SiteFooter from "@components/SiteFooter";
 
 export default function Layout({ children }) {
 	return (

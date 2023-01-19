@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import Image from "next/image";
 import TextureBackground from "./assets/texture.svg";
 import IntroPhoto from "./assets/ozmar-estadio-olimpico-universitario.jpg";
-import SocialsList from "../../SocialsList";
+import SocialsList from "@components/SocialsList";
 
 export default function IntroSection() {
 	return (
