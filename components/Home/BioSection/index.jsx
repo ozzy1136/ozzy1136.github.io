@@ -21,12 +21,12 @@ export default function HomeBioSection() {
 					using that skill to create cool and useful things. I started
 					my coding journey by tinkering with{" "}
 					<a href="https://www.raspberrypi.com">Raspberry Pi</a>, but
-					was drawn to the Web's innate openess and the fact that you
-					can create websites that are available to anyone in the
+					was drawn to the Web&apos;s innate openess and the fact that
+					you can create websites that are available to anyone in the
 					world with an Internet connection. And now, with the web
 					more powerful than ever, it takes a bit more effort to
 					provide a great user experience for every user; a challenge
-					I'm excited to tackle on every project I work on!
+					I&apos;m excited to tackle on every project I work on!
 				</p>
 			</div>
 			<ul className={`${styles.servicesList} l-grid list-unmarked`}>
