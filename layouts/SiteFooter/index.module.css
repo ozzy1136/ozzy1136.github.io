@@ -3,12 +3,11 @@
 }
 
 .contactInfoWrapper {
+	background-image: url("../../assets/images/flamingo_pattern_pathlove.svg");
 	grid-column: wrapper;
-	background-color: var(--bgc-20);
 	padding-inline: var(--space-lg);
 	padding-block: var(--space-lg);
 	margin-block-end: var(--space-xxl);
-	border-radius: 20px;
 
 	@media (--xl-viewport) {
 		padding-block: var(--space-lg);
