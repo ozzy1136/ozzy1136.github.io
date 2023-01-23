@@ -1,0 +1,45 @@
+.projectContainer:not(:first-child) {
+	margin-block-start: var(--space-xxl);
+}
+
+.projectHeading {
+	margin-block-end: var(--space-xs);
+}
+
+.projectSummary {
+	margin-block-end: var(--space-lg);
+}
+
+.projectImagesContainer {
+	row-gap: var(--space-md);
+	column-gap: var(--space-md);
+}
+
+@media (--xl-viewport) {
+	.projectImagesContainer {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (--xxl-viewport) {
+	.projectContainer {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: var(--space-xl);
+	}
+
+	.projectHeading {
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	.projectSummary {
+		grid-column-start: 1;
+		grid-row-start: 2;
+	}
+
+	.projectImagesContainer {
+		grid-template-columns: revert;
+		grid-column: 2 / wrapper-end;
+		grid-row: 1 / span 3;
+	}
+}

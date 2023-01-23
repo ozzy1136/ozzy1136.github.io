@@ -1,52 +1,52 @@
 import styles from "./index.module.css";
 
+import FeaturedProject from "@components/FeaturedProject";
 import ProjectImage from "@components/ProjectImage";
 import spaceWebsiteHome from "./assets/space-website-home.png";
 import spaceWebsiteDestinations from "./assets/space-website-destinations.png";
-import spaceWebsiteCrew from "./assets/space-website-crew.png";
-import countriesViewerHome from "./assets/countries-viewer-home.png";
-import countriesViewerDetails from "./assets/countries-viewer-details.png";
-import prsStart from "./assets/prs-game-start.png";
-import prsWin from "./assets/prs-game-win.png";
-import prsLose from "./assets/prs-game-lose.png";
+import countriesListHome from "./assets/countries-viewer-home.png";
+import countriesListDetails from "./assets/countries-viewer-details.png";
+import rpsStart from "./assets/rps-game-start.png";
+import rpsWin from "./assets/rps-game-win.png";
 
 export default function ProjectsSection() {
 	return (
 		<div className={`${styles.container} l-grid l-grid-section-container`}>
 			<h2 className={styles.sectionHeading}>Featured Projects</h2>
 			<div className={`${styles.projectsContainer} l-grid`}>
-				<div className={styles.projectContainer}>
-					<h3 className={styles.projectHeading}>
-						Space Tourist Multipage Website
-					</h3>
+				<FeaturedProject
+					projectName="Space Tourism Website"
+					projectLink="https://ozzy1136.github.io/space-tourism-website"
+					projectSummary="A multi-page website with plenty of images and different layouts. This project was built with React and the Next framework."
+				>
 					<ProjectImage
 						src={spaceWebsiteHome}
 						alt="Home page of a space tourism website"
 					/>
 					<ProjectImage src={spaceWebsiteDestinations} />
-					<ProjectImage src={spaceWebsiteCrew} />
-				</div>
-				<div
-					className={`${styles.countriesViewerContainer} ${styles.projectContainer}`}
+				</FeaturedProject>
+				<FeaturedProject
+					projectName="Countries List"
+					projectLink="https://ozzy1136.github.io/rest-countries-api-with-color-theme-switcher/"
+					projectSummary="A single page app that fetches data from the REST Countries API to display a list of countries. The app implements list virtualization to manage page resources and improve performance, as well as search and filtering by region."
 				>
-					<h3 className={styles.projectHeading}>Countries Viewer</h3>
-					<ProjectImage src={countriesViewerHome} />
+					<ProjectImage src={countriesListHome} />
 					<ProjectImage
-						src={countriesViewerDetails}
+						src={countriesListDetails}
 						alt="Screenshot showing the details page for a country"
 					/>
-				</div>
-				<div className={`${styles.projectContainer}`}>
-					<h3 className={styles.projectHeading}>
-						Paper, Rock, Scissors Game
-					</h3>
+				</FeaturedProject>
+				<FeaturedProject
+					projectName="Rock, Paper, Scissors Game"
+					projectLink="https://ozzy1136.github.io/rock-paper-scissors/"
+					projectSummary="The classic tiebreaker game recreated on the web. The user is able to choose a token and watch as the result is revealed using CSS animations."
+				>
 					<ProjectImage
-						src={prsStart}
+						src={rpsStart}
 						alt="Screenshot of the start page for a paper, rock, scissors game"
 					/>
-					<ProjectImage src={prsWin} />
-					<ProjectImage src={prsLose} />
-				</div>
+					<ProjectImage src={rpsWin} />
+				</FeaturedProject>
 			</div>
 		</div>
 	);

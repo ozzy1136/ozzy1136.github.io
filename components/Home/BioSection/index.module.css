@@ -1,9 +1,8 @@
 .wrapper {
-	margin-block-end: var(--space-xxl);
+	margin-block-end: var(--space-xxxl);
 
 	@media (--xxxl-viewport) {
 		--content-grid-columns: 1fr 1fr;
-		margin-block-end: var(--space-xxxl);
 	}
 }
 

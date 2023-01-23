@@ -1,18 +1,12 @@
 .container {
-	margin-block-end: var(--space-xxl);
+	margin-block-end: var(--space-xxxl);
 }
 
 .sectionHeading {
 	grid-column: wrapper;
+	margin-block-end: var(--space-lg);
 }
 
 .projectsContainer {
 	grid-column: wrapper;
-}
-
-.projectContainer {
-	display: flex;
-	flex-direction: column;
-	row-gap: var(--space-xl);
-	margin-block-start: var(--space-xxxl);
 }
