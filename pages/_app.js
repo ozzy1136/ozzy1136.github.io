@@ -1,4 +1,4 @@
-import "../global.css";
+import "@assets/global.css";
 
 import Layout from "@components/Layout";
 

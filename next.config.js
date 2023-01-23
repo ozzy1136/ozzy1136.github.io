@@ -15,7 +15,9 @@ module.exports = {
 
 		config.resolve.alias = {
 			...config.resolve.alias,
+			"@assets": path.resolve(__dirname, "assets/"),
 			"@components": path.resolve(__dirname, "components/"),
+			"@layouts": path.resolve(__dirname, "layouts/"),
 		};
 
 		return config;

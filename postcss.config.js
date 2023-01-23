@@ -8,7 +8,7 @@ module.exports = {
 						features: {
 							"nesting-rules": true,
 							"custom-media-queries": {
-								importFrom: "global.css",
+								importFrom: "assets/global.css",
 							},
 							"all-property": false,
 							"any-link-pseudo-class": false,
@@ -31,7 +31,7 @@ module.exports = {
 						features: {
 							"nesting-rules": true,
 							"custom-media-queries": {
-								importFrom: "global.css",
+								importFrom: "assets/global.css",
 							},
 							"all-property": false,
 							"any-link-pseudo-class": false,

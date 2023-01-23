@@ -2,12 +2,12 @@ import styles from "./index.module.css";
 
 import FeaturedProject from "@components/FeaturedProject";
 import ProjectImage from "@components/ProjectImage";
-import spaceWebsiteHome from "./assets/space-website-home.png";
-import spaceWebsiteDestinations from "./assets/space-website-destinations.png";
-import countriesListHome from "./assets/countries-viewer-home.png";
-import countriesListDetails from "./assets/countries-viewer-details.png";
-import rpsStart from "./assets/rps-game-start.png";
-import rpsWin from "./assets/rps-game-win.png";
+import spaceWebsiteHome from "@assets/images/space-website-home.png";
+import spaceWebsiteDestinations from "@assets/images/space-website-destinations.png";
+import countriesListHome from "@assets/images/countries-viewer-home.png";
+import countriesListDetails from "@assets/images/countries-viewer-details.png";
+import rpsStart from "@assets/images/rps-game-start.png";
+import rpsWin from "@assets/images/rps-game-win.png";
 
 export default function ProjectsSection() {
 	return (

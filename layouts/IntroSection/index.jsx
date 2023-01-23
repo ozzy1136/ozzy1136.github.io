@@ -1,8 +1,9 @@
 import styles from "./index.module.css";
 
 import Image from "next/image";
-import TextureBackground from "./assets/texture.svg";
-import IntroPhoto from "./assets/ozmar-estadio-olimpico-universitario.jpg";
+
+import IntroPhoto from "@assets/images/ozmar-estadio-olimpico-universitario.jpg";
+import TextureBackground from "@assets/images/texture.svg";
 import SocialsList from "@components/SocialsList";
 
 export default function IntroSection() {

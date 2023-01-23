@@ -1,9 +1,9 @@
 import styles from "./index.module.css";
 
-import TwitterIcon from "./assets/twitterIcon.svg";
-import GitHubIcon from "./assets/gitHubIcon.svg";
-import FrontendMentorIcon from "./assets/frontendMentorIcon.svg";
-import LinkedInIcon from "./assets/linkedinIcon.svg";
+import TwitterIcon from "@assets/icons/twitterIcon.svg";
+import GitHubIcon from "@assets/icons/gitHubIcon.svg";
+import FrontendMentorIcon from "@assets/icons/frontendMentorIcon.svg";
+import LinkedInIcon from "@assets/icons/linkedinIcon.svg";
 
 export default function SocialsList({ className = "" }) {
 	return (

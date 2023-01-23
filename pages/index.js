@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import IntroSection from "@components/Home/IntroSection";
-import BioSection from "@components/Home/BioSection";
-import ProjectsSection from "@components/Home/ProjectsSection";
+import IntroSection from "@layouts/IntroSection";
+import BioSection from "@layouts/BioSection";
+import ProjectsSection from "@layouts/ProjectsSection";
 
 export default function Home() {
 	return (
