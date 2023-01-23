@@ -27,7 +27,7 @@ export default function IntroSection() {
 				<div className={`${styles.photoElWrapper}`}>
 					<Image
 						src={introPhoto}
-						sizes="90vw, (min-width: 750px) and (max-width: 1150px) 50vw, (min-width: 1190px) 30vw"
+						sizes="90vw, (min-width: 750px) 50vw, (min-width: 1190px) 30vw"
 						quality={50}
 						priority={true}
 						alt=""
