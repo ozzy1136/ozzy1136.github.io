@@ -17,7 +17,13 @@ export default function ProjectsSection() {
 				<FeaturedProject
 					projectName="Space Tourism Website"
 					projectLink="https://ozzy1136.github.io/space-tourism-website"
-					projectSummary="A multi-page website with plenty of images and different layouts. This project was built with React and the Next framework."
+					ProjectSummary={() => (
+						<p className={styles.projectSummary}>
+							A multi-page website with plenty of images and
+							different layouts. This project was built with React
+							and the Next framework.
+						</p>
+					)}
 				>
 					<ProjectImage
 						src={spaceWebsiteHome}
@@ -28,7 +34,18 @@ export default function ProjectsSection() {
 				<FeaturedProject
 					projectName="Countries List"
 					projectLink="https://ozzy1136.github.io/rest-countries-api-with-color-theme-switcher/"
-					projectSummary="A single page app that fetches data from the REST Countries API to display a list of countries. The app implements list virtualization to manage page resources and improve performance, as well as search and filtering by region."
+					ProjectSummary={() => (
+						<p className={styles.projectSummary}>
+							A single page app that fetches data from the{" "}
+							<a href="https://restcountries.com/">
+								REST Countries API
+							</a>{" "}
+							to display a list of countries. The app implements
+							list virtualization to manage page resources and
+							improve performance, as well as search and filtering
+							by region.
+						</p>
+					)}
 				>
 					<ProjectImage src={countriesListHome} />
 					<ProjectImage
@@ -39,7 +56,13 @@ export default function ProjectsSection() {
 				<FeaturedProject
 					projectName="Rock, Paper, Scissors Game"
 					projectLink="https://ozzy1136.github.io/rock-paper-scissors/"
-					projectSummary="The classic tiebreaker game recreated on the web. The user is able to choose a token and watch as the result is revealed using CSS animations."
+					ProjectSummary={() => (
+						<p className={styles.projectSummary}>
+							The classic tiebreaker game recreated on the web.
+							The user is able to choose a token and watch as the
+							result is revealed using CSS animations.
+						</p>
+					)}
 				>
 					<ProjectImage
 						src={rpsStart}

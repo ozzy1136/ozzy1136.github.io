@@ -10,3 +10,7 @@
 .projectsContainer {
 	grid-column: wrapper;
 }
+
+.projectSummary {
+	margin-block-end: var(--space-lg);
+}
