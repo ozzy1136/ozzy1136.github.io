@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 import Image from "next/image";
 
-import IntroPhoto from "@assets/images/ozmar-estadio-olimpico-universitario.jpg";
+import introPhoto from "@assets/images/ozmar-estadio-olimpico-universitario.jpg";
 import TextureBackground from "@assets/images/texture.svg";
 import SocialsList from "@components/SocialsList";
 
@@ -25,13 +25,9 @@ export default function IntroSection() {
 			</div>
 			<figure className={`${styles.photoContentWrapper} l-flex`}>
 				<div className={`${styles.photoElWrapper}`}>
-					{/* TODO fix <Image/> sizes property to serve correct image size at specific viewport sizes */}
 					<Image
-						src={IntroPhoto}
-						layout="responsive"
-						height={3024}
-						width={4032}
-						sizes="85vw, (min-width: 520px) and (max-width: 749px) 450px, (min-width: 750px) and (max-width: 1189px) 35vw, and (min-width: 1190px) 450px"
+						src={introPhoto}
+						sizes="90vw, (min-width: 750px) and (max-width: 1150px) 50vw, (min-width: 1190px) 30vw"
 						quality={50}
 						priority={true}
 						alt=""
