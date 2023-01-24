@@ -9,7 +9,7 @@ export default function SiteFooter() {
 			id="contact-section"
 			aria-labelledby="contactHeading"
 		>
-			<div className={`${styles.contactInfoWrapper} l-grid`}>
+			<div className={`${styles.contactInfoWrapper} l-grid l-grid-section-container`}>
 				<div className={`${styles.contactInfoSocials} l-flex`}>
 					<div
 						className={`${styles.contactInfoSocialsHeadingWrapper}`}

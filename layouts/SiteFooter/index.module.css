@@ -4,13 +4,11 @@
 
 .contactInfoWrapper {
 	background-image: url("../../assets/images/flamingo_pattern_pathlove.svg");
-	grid-column: wrapper;
-	padding-inline: var(--space-lg);
+	grid-column: full;
 	padding-block: var(--space-lg);
 	margin-block-end: var(--space-xxl);
 
 	@media (--xl-viewport) {
-		padding-block: var(--space-lg);
 		align-items: center;
 	}
 
@@ -25,14 +23,17 @@
 
 .contactInfoSocials {
 	--fxd: column;
-	--rg: var(--space-sm);
+	--rg: var(--space-lg);
+
+	padding-inline: var(--space-lg);
+	grid-column: wrapper;
 }
 
 .contactInfoSocialsHeadingWrapper {
 	text-align: center;
-	margin-block-end: var(--space-sm);
 
 	@media (--xl-viewport) {
+		margin-block-end: initial;
 		text-align: initial;
 		grid-column: 1 / -1;
 	}
@@ -43,11 +44,7 @@
 }
 
 .contactInfoSocialsListWrapper {
-	margin-inline: auto;
-	margin-block-end: var(--space-md);
-
 	@media (--xl-viewport) {
-		margin-inline-start: 0px;
 		grid-row-start: 2;
 	}
 }
