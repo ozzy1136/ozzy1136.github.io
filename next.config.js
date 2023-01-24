@@ -1,6 +1,7 @@
-let path = require("path");
+const path = require("path");
+const withExportImages = require("next-export-optimize-images");
 
-module.exports = {
+module.exports = withExportImages({
 	reactStrictMode: true,
 	swcMinify: true,
 	webpack: (config) => {
@@ -22,4 +23,4 @@ module.exports = {
 
 		return config;
 	},
-};
+});
