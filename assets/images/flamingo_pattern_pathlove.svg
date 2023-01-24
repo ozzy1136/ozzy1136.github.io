@@ -6,7 +6,7 @@
 	<style>
 		path,
 		circle {
-			opacity: 0.05;
+			opacity: 0.03;
 		}
 	</style>
 	<rect id="background" x="-2.164" y="-8.897" width="381.399" height="387.433" style="fill:hsl(272deg, 74%, 11%);" />
