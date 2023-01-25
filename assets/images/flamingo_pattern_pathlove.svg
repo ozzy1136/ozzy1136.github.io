@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg viewBox="0 0 375 375" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve" xmlns:serif="http://www.serif.com/"
 	style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
 	<style>
 		path,
 		circle {
-			opacity: 0.03;
+			opacity: 0.05;
 		}
 	</style>
 	<rect id="background" x="-2.164" y="-8.897" width="381.399" height="387.433" style="fill:hsl(272deg, 74%, 11%);" />
