@@ -8,12 +8,8 @@
 	padding-block: var(--space-lg);
 	margin-block-end: var(--space-xxl);
 
-	@media (--xl-viewport) {
-		align-items: center;
-	}
-
-	@media (--xxl-viewport) {
-		justify-content: space-around;
+	@media (--lg-viewport) {
+		padding-block: var(--space-xl);
 	}
 
 	@media (--xxxxl-viewport) {
@@ -23,7 +19,7 @@
 
 .contactInfoSocials {
 	--fxd: column;
-	--rg: var(--space-lg);
+	--rg: var(--space-md);
 
 	padding-inline: var(--space-lg);
 	grid-column: wrapper;

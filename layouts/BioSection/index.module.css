@@ -1,9 +1,5 @@
 .wrapper {
 	margin-block-end: var(--space-xxxl);
-
-	@media (--xxxl-viewport) {
-		--content-grid-columns: 1fr 1fr;
-	}
 }
 
 .sectionHeadingWrapper {
@@ -13,19 +9,12 @@
 
 .bioWrapper {
 	grid-column: wrapper;
-	margin-block-end: var(--space-xxl);
+	margin-block-end: var(--space-xl);
 }
 
 .sectionHeading {
 	display: inline;
 	font-size: var(--fz-xxxxl);
-}
-
-.sectionHeadingAddendum {
-	color: var(--c-text-sub-heading);
-	font-weight: 700;
-	font-size: var(--fz-xxl);
-	line-height: 1.2;
 }
 
 .textEmphasized {
@@ -57,82 +46,8 @@
 	color: var(--c-accent-main);
 }
 
-.servicesList {
-	grid-column: wrapper;
-
-	@media (--lg-viewport) {
-		--rg: var(--space-xl);
-		grid-template-columns:
-			45% 1fr
-			minmax(40%, 1fr);
+@media (--xxxl-viewport) {
+	.wrapper {
+		--content-grid-columns: 1fr 1fr;
 	}
-
-	@media (--xl-viewport) {
-		--colmg: var(--space-xl);
-		--rg: var(--space-xs);
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: max-content auto;
-	}
-
-	@media (--xxl-viewport) {
-		grid-column-start: 2;
-		grid-row-start: 3;
-	}
-}
-
-.serviceCategory {
-	@media (--lg-viewport) {
-		display: contents;
-	}
-}
-
-.serviceCategory:not(:last-child) {
-	margin-block-end: var(--space-xl);
-}
-
-.serviceName {
-	position: relative;
-	margin-block-end: var(--space-md);
-
-	@media (--lg-viewport) {
-		align-self: start;
-	}
-
-	@media (--xl-viewport) {
-		margin-block-end: var(--space-sm);
-		align-self: end;
-	}
-}
-
-.serviceName::after {
-	content: "";
-	display: block;
-	width: 102%;
-	height: 3px;
-	margin-inline-start: 50%;
-	transform: translateX(-50%);
-	position: absolute;
-	left: 0px;
-	bottom: -4px;
-	background-color: var(--c-accent-main);
-	clip-path: polygon(0% 100%, 1% 0%, 100% 0%, 99% 100%);
-}
-
-.serviceDetailsList {
-	padding-inline-start: var(--space-md);
-
-	@media (--lg-viewport) {
-		grid-column-start: 3;
-	}
-
-	@media (--xl-viewport) {
-		grid-column-start: auto;
-		order: 1;
-	}
-}
-
-.serviceDetailsList > li::marker {
-	color: var(--c-blue-20);
-	font-size: var(--fz-sm);
-	vertical-align: text-top;
 }

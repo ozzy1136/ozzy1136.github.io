@@ -19,8 +19,9 @@ export default function ProjectsSection() {
 					projectLink="https://ozzy1136.github.io/space-tourism-website"
 					ProjectSummary={() => (
 						<p className={styles.projectSummary}>
-							A multi-page website with plenty of images and
-							different layouts. This project was built with React
+							A multi-page website with a responsive design, some
+							neat interactions on hover, and a custom, accessible
+							tabs component. This project was built with React
 							and the Next framework.
 						</p>
 					)}

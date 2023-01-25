@@ -8,7 +8,7 @@ export default function ProjectImage({ src, alt = "" }) {
 			<Image
 				src={src}
 				alt={alt}
-				sizes="95vw, (min-width: 955px) 40vw, (min-width: 1460px) 25vw"
+				sizes="95vw, (min-width: 750px) 40vw"
 				quality={25}
 			/>
 		</div>
