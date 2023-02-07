@@ -2,18 +2,18 @@
 	"name": "personal-site",
 	"author": "Ozmar Mendoza",
 	"scripts": {
-		"copy:public": "node tasks/copyStaticFiles.mjs",
+		"copy:static": "node tasks/copyStaticDir.mjs",
 		"clean:dev": "del-cli dev/**/*",
 		"watch:html": "onchange -a src/**/*.html -- node tasks/devHtml.mjs {{file}}",
 		"watch:css": "onchange -a src/**/*.css -- node tasks/devCss.mjs {{file}}",
 		"watch:js": "onchange -a src/**/*.js -- node tasks/devJs.mjs {{file}}",
 		"serve:dev": "srr --root=./dev --port=3000",
-		"dev": "run-z clean:dev copy:public/--dir=dev watch:html,watch:css,watch:js,serve:dev",
+		"dev": "run-z clean:dev copy:static/--target=dev watch:html,watch:css,watch:js,serve:dev",
 		"clean:prod": "del-cli dist/**/*",
 		"build:html": "node tasks/buildHtml.mjs",
 		"build:css": "node tasks/buildCss.mjs",
 		"build:js": "node tasks/buildJs.mjs",
-		"build": "run-z clean:prod copy:public/--dir=dist build:html build:css build:js",
+		"build": "run-z clean:prod copy:static/--target=dist build:html build:css build:js",
 		"serve:prod": "srr --root=./dist --port=3000"
 	},
 	"devDependencies": {
