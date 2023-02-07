@@ -1,15 +1,31 @@
 {
 	"name": "personal-site",
-	"private": true,
-	"version": "0.1.0",
-	"type": "module",
+	"author": "Ozmar Mendoza",
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
+		"copy:public": "node tasks/copyStaticFiles.mjs",
+		"watch:html": "onchange -a src/**/*.html -- node tasks/devHtml.mjs {{file}}",
+		"watch:css": "onchange -a src/**/*.css -- node tasks/devCss.mjs {{file}}",
+		"watch:js": "onchange -a src/**/*.js -- node tasks/devJs.mjs {{file}}",
+		"serve:dev": "srr --root=./dev --port=3000",
+		"dev": "run-z copy:public/--dir=dev watch:html,watch:css,watch:js,serve:dev",
+		"build:html": "node tasks/buildHtml.mjs",
+		"build:css": "node tasks/buildCss.mjs",
+		"build:js": "node tasks/buildJs.mjs",
+		"build": "run-z copy:public/--dir=dist build:html build:css build:js",
+		"start": "srr --root=./dist --port=3000"
 	},
 	"devDependencies": {
-		"postcss-preset-env": "^8.0.0",
-		"vite": "^4.0.0"
+		"clean-css": "^5.3.2",
+		"fs-extra": "^11.1.0",
+		"glob": "^8.1.0",
+		"html-minifier-terser": "^7.1.0",
+		"onchange": "^7.1.0",
+		"postcss": "^8.4.21",
+		"postcss-import": "^15.1.0",
+		"postcss-load-config": "^4.0.1",
+		"postcss-preset-env": "^8.0.1",
+		"run-z": "^1.11.0",
+		"serve-reload-replace": "^2.0.1",
+		"terser": "^5.16.2"
 	}
 }

@@ -7,7 +7,8 @@
 		"paths": {
 			"@assets/*": ["assets/"],
 			"@components/*": ["components/*/index.js"],
-			"@layouts/*": ["layouts/*/index.js"]
+			"@layouts/*": ["layouts/*/index.js"],
+			"@utils/*": ["utils/*"]
 		},
 		"strictNullChecks": true,
 		"strictFunctionTypes": true
