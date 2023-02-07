@@ -13,5 +13,5 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true
 	},
-	"exclude": ["node_modules", ".vscode", "public", "dev", "dist"]
+	"exclude": ["node_modules", ".vscode", "static", "dev", "dist"]
 }
