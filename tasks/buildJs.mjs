@@ -2,7 +2,7 @@ import globLib from "glob";
 import { minify } from "terser";
 
 import fs from "fs-extra";
-import path from "path";
+import { dirname } from "path";
 
 const { glob } = globLib;
 
@@ -15,7 +15,7 @@ glob("src/**/*{.js,.mjs}", (error, files) => {
 		// glob works with forward slashes in paths
 		const newFile = file.replace(/^[\w]+(?=\/)/, `${PRODUCTION_DIRECTORY}`);
 
-		await fs.ensureDir(path.dirname(newFile));
+		await fs.ensureDir(dirname(newFile));
 
 		const result = await minify(
 			await fs.readFile(file, { encoding: "utf8" })

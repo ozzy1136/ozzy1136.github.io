@@ -27,6 +27,8 @@
 		"postcss-import": "^15.1.0",
 		"postcss-load-config": "^4.0.1",
 		"postcss-preset-env": "^8.0.1",
+		"posthtml": "^0.16.6",
+		"posthtml-inline-svg": "^0.2.0",
 		"run-z": "^1.11.0",
 		"serve-reload-replace": "^2.0.1",
 		"terser": "^5.16.2"

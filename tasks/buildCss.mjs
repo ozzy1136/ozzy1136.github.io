@@ -2,7 +2,7 @@ import CleanCSS from "clean-css";
 import globLib from "glob";
 
 import fs from "fs-extra";
-import path from "path";
+import { dirname } from "path";
 
 import usePostcss from "./usePostcss.mjs";
 
@@ -17,7 +17,7 @@ glob("src/**/*.css", (error, files) => {
 		// glob works with forward slashes in paths
 		const newFile = file.replace(/^[\w]+(?=\/)/, `${PRODUCTION_DIRECTORY}`);
 
-		await fs.ensureDir(path.dirname(newFile));
+		await fs.ensureDir(dirname(newFile));
 
 		const css = await usePostcss(file, newFile);
 		const minifiedCss = new CleanCSS().minify(css).styles;
