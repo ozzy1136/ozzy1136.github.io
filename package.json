@@ -32,5 +32,8 @@
 		"run-z": "^1.11.0",
 		"serve-reload-replace": "^2.0.1",
 		"terser": "^5.16.2"
+	},
+	"overrides": {
+		"svgo": "^3.0.2"
 	}
 }
