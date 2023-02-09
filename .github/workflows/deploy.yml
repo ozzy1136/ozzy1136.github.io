@@ -1,8 +1,6 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
-run-name: Testing run-name option
-
 on:
     # Runs on pushes targeting the default branch
     push:
@@ -34,7 +32,7 @@ jobs:
                   node-version: "lts/*"
             # - run: npm i
             # - run: npm run build
-            - run: node -e \"console.log("Hello, World!");\"
+            - run: node -e "console.log("Hello, World!");"
     # deploy:
     #   needs: build
     #   environment:
