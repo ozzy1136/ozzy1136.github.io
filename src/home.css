@@ -282,6 +282,42 @@
 	}
 }
 
+.projects-container {
+	margin-block-end: var(--space-xxxl);
+}
+
+.projects-heading {
+	grid-column: wrapper;
+	margin-block-end: var(--space-lg);
+}
+
+.projects {
+	grid-column: wrapper;
+}
+
+.project-summary {
+	margin-block-end: var(--space-lg);
+}
+
+.project:not(:first-child) {
+	margin-block-start: var(--space-xxl);
+}
+
+.project-heading {
+	margin-block-end: var(--space-xs);
+}
+
+.project-images {
+	row-gap: var(--space-md);
+	column-gap: var(--space-md);
+}
+
+@media (--xl-viewport) {
+	.project-images {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 .footer-container {
 	margin-block-end: var(--space-md);
 }
