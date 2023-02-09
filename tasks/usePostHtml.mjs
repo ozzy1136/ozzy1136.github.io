@@ -7,7 +7,7 @@ export default async function (file) {
 	return posthtml([
 		inlineSVG({
 			cwd: "static",
-			tag: "icon",
+			tag: "svgslot",
 			attr: "src",
 		}),
 	])
