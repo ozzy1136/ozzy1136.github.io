@@ -5,11 +5,13 @@
 		"moduleResolution": "Node16",
 		"baseUrl": ".",
 		"paths": {
-			"@components/*": ["components/*/index.jsx"],
-			"@layouts/*": ["layouts/*/index.jsx"]
+			"@assets/*": ["assets/"],
+			"@components/*": ["components/*/index.js"],
+			"@layouts/*": ["layouts/*/index.js"],
+			"@utils/*": ["utils/*"]
 		},
 		"strictNullChecks": true,
 		"strictFunctionTypes": true
 	},
-	"exclude": ["node_modules", "**/node_modules/*", ".next", "out"]
+	"exclude": ["node_modules", ".vscode", "static", "dev", "dist"]
 }
