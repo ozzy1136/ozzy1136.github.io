@@ -24,7 +24,6 @@ glob("src/**/*.html", (error, files) => {
 		const minifiedHtml = await minify(html, {
 			caseSensitive: true,
 			collapseBooleanAttributes: true,
-			collapseInlineTagWhitespace: true,
 			collapseWhitespace: true,
 			decodeEntities: true,
 			html5: true,
