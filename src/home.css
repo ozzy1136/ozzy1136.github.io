@@ -1,7 +1,5 @@
 @import "global.css";
 
-@custom-media --half-viewport-grid screen and (min-width: 950px);
-
 .profile-link {
 	--fxd: row;
 	--colmg: var(--space-sm);
@@ -18,7 +16,7 @@
 	margin-block-start: var(--space-lg);
 	margin-block-end: var(--space-xxl);
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		--content-grid-columns: 1fr var(--space-xl) 1fr;
 		margin-block-start: var(--space-xl);
 	}
@@ -36,7 +34,7 @@
 	z-index: 2;
 	grid-column: wrapper;
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		display: contents;
 	}
 }
@@ -50,7 +48,7 @@
 		width: unset;
 	}
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		width: min-content;
 		grid-column-start: wrapper-start;
 	}
@@ -64,7 +62,7 @@
 .intro-bio-summary {
 	margin-block-end: var(--space-xl);
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		grid-column-start: wrapper-start;
 		grid-row-start: 2;
 	}
@@ -78,7 +76,7 @@
 }
 
 .intro-bio-profiles-wrapper {
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		grid-column-start: wrapper-start;
 		grid-row-start: 3;
 		align-self: flex-start;
@@ -110,7 +108,7 @@
 	grid-column: wrapper;
 	margin-block-end: var(--space-xxl);
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		--fxd: column;
 		width: 100%;
 		max-width: 400px;
@@ -136,7 +134,7 @@
 	width: 100%;
 	margin-inline: auto;
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		flex-basis: unset;
 	}
 
@@ -150,7 +148,7 @@
 	position: relative;
 	max-width: 65ch;
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		flex-basis: unset;
 	}
 
@@ -166,7 +164,7 @@
 	grid-column: full;
 	grid-row-start: 3;
 
-	@media (--half-viewport-grid) {
+	@media (--xxl-viewport) {
 		grid-column: wrapper / span 1;
 		grid-row-start: 4;
 		max-height: 110px;
