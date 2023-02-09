@@ -322,7 +322,7 @@
 	margin-block-end: var(--space-md);
 }
 
-.footer-profiles-container {
+.footer-profiles-wrapper {
 	background-image: url("/flamingo_pattern_pathlove.svg");
 	grid-column: full;
 	padding-block: var(--space-lg);
