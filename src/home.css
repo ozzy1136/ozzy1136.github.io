@@ -1,12 +1,72 @@
 @import "global.css";
 
 .profile-link {
+	--fxd: row;
+	--colmg: var(--space-sm);
+
 	width: fit-content;
-	display: flex;
-	column-gap: var(--space-sm);
 }
 
 .profile-link-icon {
 	width: var(--fz-md);
 	fill: currentColor;
+}
+
+.footer-container {
+	margin-block-end: var(--space-md);
+}
+
+.footer-profiles-container {
+	background-image: url("/flamingo_pattern_pathlove.svg");
+	grid-column: full;
+	padding-block: var(--space-lg);
+	margin-block-end: var(--space-xxl);
+
+	@media (--lg-viewport) {
+		padding-block: var(--space-xl);
+	}
+
+	@media (--xxxxl-viewport) {
+		padding-inline: var(--space-xxxl);
+	}
+}
+
+.footer-profiles {
+	--fxd: column;
+	--rg: var(--space-md);
+
+	padding-inline: var(--space-lg);
+	grid-column: wrapper;
+}
+
+.footer-profiles-heading-wrapper {
+	text-align: center;
+
+	@media (--xl-viewport) {
+		margin-block-end: initial;
+		text-align: initial;
+		grid-column: 1 / -1;
+	}
+}
+
+.footer-profiles-heading {
+	font-size: var(--fz-md);
+}
+
+.footer-profiles-links {
+	--fxd: column;
+	--rg: var(--space-md);
+
+	@media (--lg-viewport) {
+		--fxd: row;
+		--colmg: var(--space-xl);
+	}
+}
+
+.farewell-container {
+	grid-column: wrapper;
+}
+
+.farewell-text {
+	color: var(--c-text-secondary);
 }
