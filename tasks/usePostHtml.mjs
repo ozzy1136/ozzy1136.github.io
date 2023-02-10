@@ -6,7 +6,7 @@ import fs from "fs-extra";
 export default async function (file) {
 	return posthtml([
 		inlineSVG({
-			cwd: "static",
+			cwd: "./static",
 			tag: "svgslot",
 			attr: "src",
 		}),
