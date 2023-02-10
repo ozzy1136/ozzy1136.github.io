@@ -32,9 +32,10 @@ jobs:
                   node-version: "lts/*"
             - name: Install dependencies and build files
               run: |
+                  node -e "${{github.workspace}}"
                   npm ci
                   npm run build
-              working-directory: ${{GITHUB.WORKSPACE}}
+              working-directory: ${{github.workspace}}
     deploy:
         environment:
             name: github-pages
