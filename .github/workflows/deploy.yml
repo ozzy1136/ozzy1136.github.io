@@ -32,23 +32,24 @@ jobs:
                   node-version: "lts/*"
             - name: Install dependencies and build files
               run: |
-                  node -e "const fs = require(\"fs\"); const path = require(\"path\"); const statsObj = fs.statSync(path.resolve(process.cwd(), \"static\" + path.sep + \"icons\" + path.sep + \"gitHubIcon.svg\")); console.log(\"isFile\", statsObj.isFile()); console.log(\"isDirectory\", statsObj.isDirectory());"
-    # deploy:
-    #     environment:
-    #         name: github-pages
-    #         url: ${{ steps.deployment.outputs.page_url }}
-    #     runs-on: ubuntu-latest
-    #     needs: build
-    #     steps:
-    #         - name: Checkout
-    #           uses: actions/checkout@v3
-    #         - name: Setup Pages
-    #           uses: actions/configure-pages@v3
-    #         - name: Upload artifact
-    #           uses: actions/upload-pages-artifact@v1
-    #           with:
-    #               # Upload production repository
-    #               path: "./dist"
-    #         - name: Deploy to GitHub Pages
-    #           id: deployment
-    #           uses: actions/deploy-pages@v1
+                  npm ci
+                  npm run build
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Setup Pages
+              uses: actions/configure-pages@v3
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v1
+              with:
+                  # Upload production repository
+                  path: "./dist"
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v1
