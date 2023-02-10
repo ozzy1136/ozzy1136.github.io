@@ -32,7 +32,8 @@ jobs:
                   node-version: "lts/*"
             - name: Install dependencies and build files
               run: |
-                  node -e "const fs = require(\"fs\"); const path = require(\"path\"); const statsObj = fs.statSync(path.resolve(process.cwd(), \"static\")); console.log(\"isFile\", statsObj.isFile); console.log(\"isDirectory\", statsObj.isDirectory());"
+                  node -e "const fs = require(\"fs\"); const path = require(\"path\"); const statsObj = fs.statSync(path.resolve(process.cwd(), \"static\")); console.log(\"isFile\", statsObj.isFile()); console.log(\"isDirectory\", statsObj.isDirectory());"
+                  ls static/icons
     # deploy:
     #     environment:
     #         name: github-pages
