@@ -34,7 +34,6 @@ jobs:
               run: |
                   npm ci
                   npm run build
-              working-directory: $GITHUB_WORKSPACE
     deploy:
         environment:
             name: github-pages
