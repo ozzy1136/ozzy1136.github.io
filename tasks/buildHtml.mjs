@@ -33,8 +33,6 @@ glob("src/**/*.html", { ignore: "src/components" }, (error, files) => {
 			removeAttributeQuotes: true,
 			removeComments: true,
 			removeRedundantAttributes: true,
-			removeTagWhitespace: true,
-			useShortDoctype: true,
 		});
 		fs.writeFileSync(newFile, minifiedHtml);
 	});
