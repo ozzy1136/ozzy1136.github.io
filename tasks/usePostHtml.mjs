@@ -11,7 +11,7 @@ export default async function (file) {
 			encoding: "utf8",
 		}),
 		inlineSVG({
-			cwd: "./static",
+			cwd: "static",
 			tag: "svgslot",
 			attr: "src",
 		}),

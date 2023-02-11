@@ -11,7 +11,7 @@ const { glob } = globLib;
 
 const PRODUCTION_DIRECTORY = "dist";
 
-glob("src/**/*.html", { ignore: "src/components" }, (error, files) => {
+glob("src/**/*.html", { ignore: "src/components/*" }, (error, files) => {
 	if (error) console.error(error);
 
 	files.forEach(async (file) => {
