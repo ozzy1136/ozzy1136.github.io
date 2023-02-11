@@ -4,7 +4,7 @@
 	"scripts": {
 		"copy:static": "node tasks/copyStaticDir.mjs",
 		"clean:dev": "del-cli dev/**/*",
-		"watch:html": "onchange -a src/**/*.html -- node tasks/devHtml.mjs {{file}}",
+		"watch:html": "onchange -a src/**/*.html -e src/components -- node tasks/devHtml.mjs {{file}}",
 		"watch:css": "onchange -a src/**/*.css -- node tasks/devCss.mjs {{file}}",
 		"watch:js": "onchange -a src/**/*.js -- node tasks/devJs.mjs {{file}}",
 		"serve:dev": "srr --root=./dev --port=3000",
@@ -28,6 +28,7 @@
 		"postcss-load-config": "^4.0.1",
 		"postcss-preset-env": "^8.0.1",
 		"posthtml": "^0.16.6",
+		"posthtml-include": "^1.7.4",
 		"posthtml-inline-svg": "^0.2.0",
 		"run-z": "^1.11.0",
 		"serve-reload-replace": "^2.0.1",
