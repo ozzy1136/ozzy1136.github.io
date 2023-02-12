@@ -295,16 +295,20 @@
 	grid-column: wrapper;
 }
 
-.project-summary {
-	margin-block-end: var(--space-lg);
-}
-
 .project:not(:first-child) {
 	margin-block-start: var(--space-xxl);
 }
 
 .project-heading {
 	margin-block-end: var(--space-xs);
+}
+
+.project-repo-wrapper {
+	margin-block-end: var(--space-sm);
+}
+
+.project-summary {
+	margin-block-end: var(--space-lg);
 }
 
 .project-images {
