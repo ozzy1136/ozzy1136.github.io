@@ -303,10 +303,6 @@
 	margin-block-end: var(--space-xs);
 }
 
-.project-repo-wrapper {
-	margin-block-end: var(--space-sm);
-}
-
 .project-summary {
 	margin-block-end: var(--space-lg);
 }
