@@ -23,7 +23,7 @@
 		"glob": "^8.1.0",
 		"html-minifier-terser": "^7.1.0",
 		"onchange": "^7.1.0",
-		"postcss": "^8.4.21",
+		"postcss": "^8.4.44",
 		"postcss-import": "^15.1.0",
 		"postcss-load-config": "^4.0.1",
 		"postcss-preset-env": "^8.0.1",
